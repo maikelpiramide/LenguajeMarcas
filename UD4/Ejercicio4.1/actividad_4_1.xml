@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<billete>
+    <nombrePasajero>Pepe</nombrePasajero>
+    <aeropuertoOrigen>cualquiera</aeropuertoOrigen>
+    <aeropuertoDestino>cualquiera</aeropuertoDestino>
+    <fechaVuelo>25/07/2023</fechaVuelo>
+    <horaVuelo>08:00<horaVuelo>
+</billete>

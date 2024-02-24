@@ -26,7 +26,7 @@ public class App {
             NodeList perros = document.getElementsByTagName("perro");
             for (int i = 0; i< perros.getLength();i++){
                 Element item = (Element)perros.item(i);
-                
+
             }
 
         }catch (Exception ex){

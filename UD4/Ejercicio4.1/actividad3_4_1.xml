@@ -1,1 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE playlist [
+    <!ELEMENT playlist (nombre,canciones,cancionesRecomendadas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT canciones (cancion)>
+    <!ELEMENT cancion (nombreCancion)>
+    <!ATTLIST cancion fecha CDATA  >
+    <!ATTLIST cancion duracion CDATA >
+    <!ATTLIST cancion album CDATA >
+    <!ELEMENT nombreCancion (#PCDATA)>
+    <!ELEMENT autores (autor)>
+    <!ELEMENT autor (nombreAutor,oyentesMensuales)>
+    <!ELEMENT nombreAutor (#PCDATA)>
+    <!ELEMENT oyentesMensuales (#PCDATA)>
+    <!ELEMENT cancionesRecomendadas (cancionRecomendada)>
+    <!ELEMENT cancionRecomendada (nombreCancionRecomendada,nombreAutorCancionRecomendada)>
+    <!ELEMENT nombreCancionRecomendada (#PCDATA)>
+    <!ELEMENT nombreAutorCancionRecomendada (#PCDATA)>
+]>
+
+<playlist>
+    <nombre>Pure Nigga</nombre>
+    <canciones>
+        <cancion fecha="" duracion="" album="">
+            <nombreCancion></nombreCancion>
+            <autores>
+                <autor>
+                    <nombreAutor></nombreAutor>
+                    <oyentesMensuales></oyentesMensuales>
+                </autor>
+            </autores>
+        </cancion>
+    </canciones>
+    <cancionesRecomendadas>
+        <cancionRecomendada>
+            <nombreCancionRecomendada></nombreCancionRecomendada>
+            <nombreAutorCancionRecomendada></nombreAutorCancionRecomendada>
+        </cancionRecomendada>
+    </cancionesRecomendadas>
+</playlist>

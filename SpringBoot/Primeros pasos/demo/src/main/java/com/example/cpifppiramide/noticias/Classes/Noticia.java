@@ -5,12 +5,14 @@ public class Noticia {
     private String descripcion;
     private String autor;
     private String fechaPublicacion;
+    private String imagen;
 
-    public Noticia(String titulo, String descripcion, String autor, String fechaPublicacion){
+    public Noticia(String titulo, String descripcion, String autor, String fechaPublicacion,String rutaImagen){
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.autor =autor;
         this.fechaPublicacion = fechaPublicacion;
+        this.imagen = rutaImagen;
     }
 
     public String getAutor() {
@@ -27,5 +29,9 @@ public class Noticia {
 
     public String getTitulo() {
         return titulo;
+    }
+
+    public String getImagen() {
+        return imagen;
     }
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MainController {
     @GetMapping("/")
     public String home(Model model) {
-        Noticia noticia = new Noticia("Los 25 móviles con los diseños más locos que se han visto","Aunque casi todos los móviles nos parezcan iguales, hay algunos que se salen de la norma...","Maikel","20 de octubre de 2023");
+        Noticia noticia = new Noticia("Los 25 móviles con los diseños más locos que se han visto","Aunque casi todos los móviles nos parezcan iguales, hay algunos que se salen de la norma...","Maikel","20 de octubre de 2023","smartphone.png");
         model.addAttribute("noticia",noticia);
         return "index";
     }

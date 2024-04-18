@@ -16,7 +16,7 @@ import java.util.List;
 @Controller
 public class IdiomaController {
     @Autowired
-    IdiomaRepository idiomaRepository;
+    private IdiomaRepository idiomaRepository;
     @GetMapping("/create_idioma")
     public String idiomas(Model model){
         model.addAttribute("idioma",new Idioma());

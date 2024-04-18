@@ -14,18 +14,18 @@ public class Juego {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private String fecha_creacion;
+    private String fechaCreacion;
     private int activado;
-    private String email_creador;
-    private int visualizar_paises;
+    private String emailCreador;
+    private boolean visualizarPaises;
     private String comentario;
     public Juego(){}
-    public Juego(String nombre,String fecha,int activado, String emailCreador, int visualizarPaises,String comentario){
+    public Juego(String nombre,String fecha,int activado, String emailCreador, boolean visualizarPaises,String comentario){
         this.nombre = nombre;
-        this.fecha_creacion = fecha;
+        this.fechaCreacion = fecha;
         this.activado = activado;
-        this.email_creador = emailCreador;
-        this.visualizar_paises = visualizarPaises;
+        this.emailCreador = emailCreador;
+        this.visualizarPaises = visualizarPaises;
         this.comentario  = comentario;
     }
 
@@ -40,14 +40,13 @@ public class Juego {
     public String getFechaCreacion() {
         SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
         SimpleDateFormat outputFormat = new SimpleDateFormat("dd/MM/yyyy");
-        String salida = this.fecha_creacion;
+        String salida = this.fechaCreacion;
         try{
-            Date fecha = inputFormat.parse(this.fecha_creacion);
+            Date fecha = inputFormat.parse(this.fechaCreacion);
             salida = outputFormat.format(fecha);
         }catch(Exception ex){
             System.out.println(ex);
         }
-
 
         return salida;
     }
@@ -57,15 +56,41 @@ public class Juego {
     }
 
     public String getEmailCreador() {
-        return email_creador;
+        return emailCreador;
     }
 
-    public int getVisualizarPaises() {
-        return visualizar_paises;
+    public boolean getVisualizarPaises() {
+        return visualizarPaises;
     }
 
     public String getComentario() {
         return comentario;
+    }
+
+    //seters
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setActivado(int activado) {
+        this.activado = activado;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public void setEmailCreador(String emailCreador) {
+        this.emailCreador = emailCreador;
+    }
+
+    public void setFechaCreacion(String fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
+    public void setVisualizarPaises(boolean visualizarPaises) {
+        this.visualizarPaises = visualizarPaises;
     }
 
     @Override
@@ -73,10 +98,10 @@ public class Juego {
         return "Juego{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", fecha='" + fecha_creacion + '\'' +
+                ", fecha='" + fechaCreacion + '\'' +
                 ", activado=" + activado +
-                ", emailCreador='" + email_creador + '\'' +
-                ", visualizarPaises=" + visualizar_paises +
+                ", emailCreador='" + emailCreador + '\'' +
+                ", visualizarPaises=" + visualizarPaises +
                 ", comentario='" + comentario + '\'' +
                 '}';
     }

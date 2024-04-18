@@ -25,24 +25,31 @@ public class JuegoController {
     }
     @PostMapping("/crearJuego/newJuego")
     public String crearJuego_newJuego(@ModelAttribute Juego juegoNuevo, Model model){
-        //List<Juego> juegos = juegoRepository.findAll();
-        /*for(Juego juego:juegos) {
+        List<Juego> juegos = juegoRepository.findAll();
+        boolean existe = false;
+        for(Juego juego:juegos) {
+
             if(juego.getNombre().equals(juegoNuevo.getNombre())){
                 model.addAttribute("juegoExistente",true);
-            }else{
-                juegoRepository.save(juegoNuevo);
-                model.addAttribute("guardado",true);
+                existe = true;
+                return "crearJuego";
             }
-        }*/
+        }
+        if(!existe){
+            juegoRepository.save(juegoNuevo);
+            model.addAttribute("guardado",true);
+            return "crearJuego";
+        }
+        //juegoRepository.save(juegoNuevo);
         System.out.println(juegoNuevo.toString());
         return "crearJuego";
     }
     @GetMapping("/ver_juegos")
     public String verJuegos(Model model){
         List<Juego> juegos = juegoRepository.findAll();
-        for(Juego j: juegos){
+        /*for(Juego j: juegos){
             System.out.println(j.toString());
-        }
+        }*/
         model.addAttribute("juegos",juegos);
         return "verJuegos";
     }

@@ -77,6 +77,7 @@ public class GenerarFichero {
                 transformer.transform(source, result);
                 //System.out.println("tansformacion hecha");
             }
+
         }catch(Exception ex){
             ex.printStackTrace();
         }

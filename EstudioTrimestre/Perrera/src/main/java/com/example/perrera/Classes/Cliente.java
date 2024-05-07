@@ -20,4 +20,41 @@ public class Cliente {
     @JoinColumn(name="id_perro",referencedColumnName = "id")
     private Perro perro;
 
+    public Cliente(){}
+
+    public Perro getPerro() {
+        return perro;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getSegundoApellido() {
+        return segundoApellido;
+    }
+
+    public String getPrimerApellido() {
+        return primerApellido;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", primerApellido='" + primerApellido + '\'' +
+                ", segundoApellido='" + segundoApellido + '\'' +
+                ", email='" + email + '\'' +
+                ", perro=" + perro +
+                '}';
+    }
 }

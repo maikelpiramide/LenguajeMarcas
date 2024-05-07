@@ -20,7 +20,7 @@ public class Perro {
     @JoinColumn(name = "id_cuidador", nullable = false)
     private Cuidador cuidador;
 
-    @OneToOne
+    @OneToOne(mappedBy = "perro")
     private Cliente cliente;
 
     public Perro(){}

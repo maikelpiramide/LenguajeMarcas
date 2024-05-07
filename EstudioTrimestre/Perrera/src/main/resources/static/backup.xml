@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<perrera>
+    <clientes>
+        <cliente email="maikel@gmail.com" id="1">
+            <nombre>Maikel</nombre>
+            <primerApellido>Bautista</primerApellido>
+            <segundoApellido>Valenzuela</segundoApellido>
+            <perro chip="123ab">
+                <nombre>lola</nombre>
+                <cuidador id="1">
+                    <nombre>Pepa</nombre>
+                </cuidador>
+            </perro>
+        </cliente>
+        <cliente email="asdñfañdf@gmail.com" id="6">
+            <nombre>Miguel</nombre>
+            <primerApellido>Loque</primerApellido>
+            <segundoApellido>Sea</segundoApellido>
+            <perro chip="asdf2">
+                <nombre>Luna</nombre>
+                <cuidador id="2">
+                    <nombre>Pepe</nombre>
+                </cuidador>
+            </perro>
+        </cliente>
+        <cliente email="sara@gmail.com" id="7">
+            <nombre>Sara</nombre>
+            <primerApellido>Fernanda</primerApellido>
+            <segundoApellido>Nieto</segundoApellido>
+            <perro chip="12bgf">
+                <nombre>Rocki</nombre>
+                <cuidador id="1">
+                    <nombre>Pepa</nombre>
+                </cuidador>
+            </perro>
+        </cliente>
+    </clientes>
+</perrera>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<instituto>
+    <tipos_de_gastos>
+        <tipo_de_gasto id="2">
+            <nombre>Agua</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="8">
+            <nombre>Comidas</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="6">
+            <nombre>Electricidad</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="9">
+            <nombre>Excursiones</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="3">
+            <nombre>Internet</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="1">
+            <nombre>Luz</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="4">
+            <nombre>Mantenimiento</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="5">
+            <nombre>Papelería</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="10">
+            <nombre>Software</nombre>
+        </tipo_de_gasto>
+        <tipo_de_gasto id="7">
+            <nombre>Transporte</nombre>
+        </tipo_de_gasto>
+    </tipos_de_gastos>
+    <profesores>
+        <profesor id="1" nombre="Javi"/>
+        <profesor id="2" nombre="Clara"/>
+        <profesor id="3" nombre="Enrique"/>
+        <profesor id="4" nombre="Pablo"/>
+        <profesor id="5" nombre="Sergio"/>
+        <profesor id="6" nombre="Luisa"/>
+        <profesor id="7" nombre="Marco"/>
+        <profesor id="8" nombre="Esther"/>
+        <profesor id="9" nombre="Antonio"/>
+        <profesor id="10" nombre="Carmen"/>
+    </profesores>
+    <gastos>
+        <gasto id="7">
+            <precio>25.63</precio>
+            <tipo_de_gasto>Agua</tipo_de_gasto>
+            <profesor>Javi</profesor>
+        </gasto>
+        <gasto id="8">
+            <precio>75.65</precio>
+            <tipo_de_gasto>Agua</tipo_de_gasto>
+            <profesor>Enrique</profesor>
+        </gasto>
+        <gasto id="9">
+            <precio>15.35</precio>
+            <tipo_de_gasto>Luz</tipo_de_gasto>
+            <profesor>Pablo</profesor>
+        </gasto>
+        <gasto id="10">
+            <precio>256.52</precio>
+            <tipo_de_gasto>Luz</tipo_de_gasto>
+            <profesor>Clara</profesor>
+        </gasto>
+        <gasto id="11">
+            <precio>10.25</precio>
+            <tipo_de_gasto>Internet</tipo_de_gasto>
+            <profesor>Javi</profesor>
+        </gasto>
+        <gasto id="12">
+            <precio>100.5</precio>
+            <tipo_de_gasto>Papelería</tipo_de_gasto>
+            <profesor>Luisa</profesor>
+        </gasto>
+        <gasto id="13">
+            <precio>200.0</precio>
+            <tipo_de_gasto>Electricidad</tipo_de_gasto>
+            <profesor>Marco</profesor>
+        </gasto>
+        <gasto id="14">
+            <precio>150.75</precio>
+            <tipo_de_gasto>Transporte</tipo_de_gasto>
+            <profesor>Esther</profesor>
+        </gasto>
+        <gasto id="15">
+            <precio>130.25</precio>
+            <tipo_de_gasto>Comidas</tipo_de_gasto>
+            <profesor>Antonio</profesor>
+        </gasto>
+        <gasto id="16">
+            <precio>300.0</precio>
+            <tipo_de_gasto>Excursiones</tipo_de_gasto>
+            <profesor>Carmen</profesor>
+        </gasto>
+        <gasto id="17">
+            <precio>80.5</precio>
+            <tipo_de_gasto>Luz</tipo_de_gasto>
+            <profesor>Luisa</profesor>
+        </gasto>
+        <gasto id="18">
+            <precio>60.0</precio>
+            <tipo_de_gasto>Agua</tipo_de_gasto>
+            <profesor>Marco</profesor>
+        </gasto>
+        <gasto id="19">
+            <precio>210.0</precio>
+            <tipo_de_gasto>Internet</tipo_de_gasto>
+            <profesor>Esther</profesor>
+        </gasto>
+        <gasto id="20">
+            <precio>120.0</precio>
+            <tipo_de_gasto>Mantenimiento</tipo_de_gasto>
+            <profesor>Antonio</profesor>
+        </gasto>
+        <gasto id="21">
+            <precio>45.75</precio>
+            <tipo_de_gasto>Papelería</tipo_de_gasto>
+            <profesor>Carmen</profesor>
+        </gasto>
+    </gastos>
+</instituto>
